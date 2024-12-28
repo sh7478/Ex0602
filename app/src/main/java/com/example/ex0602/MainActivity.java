@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 clicks++;
                 btn.setText("This is a click number: " + clicks);
-                if (clicks%7 == 0)
+                if (clicks%7 == 0 || clicks%10 == 7)
                 {
                     btn.setText("BOOM!");
                 }
