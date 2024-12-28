@@ -22,9 +22,10 @@ public class MainActivity extends AppCompatActivity {
         btn = findViewById(R.id.mainbutton);
         btn.setOnClickListener(new View.OnClickListener()
         {
-            @Override
+            int clicks =0;
             public void onClick(View view) {
-                btn.setText("Oh, yea, I've been clicked!");
+                clicks++;
+                btn.setText("This is a click number: " + clicks);
             }
         });
     }
